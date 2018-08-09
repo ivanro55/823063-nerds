@@ -1,7 +1,7 @@
 ﻿# Личный проект «Нёрдс»
 
 * Студент: [Иван Романенко](https://up.htmlacademy.ru/htmlcss/22/user/823063).
-* Наставник: `Алексей Уразаев`(https://htmlacademy.ru/profile/urazaev).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
