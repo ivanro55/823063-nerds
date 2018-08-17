@@ -22,6 +22,7 @@
     </nav>
    </header>
  <main>
+  <form action="#" method="post">
     <h1>Магазин готовых шаблонов</h1>	
      <article class="filters">
      	<ul class="site-filters">
@@ -56,28 +57,30 @@
           <a class="button1" href="#">Следующая</a>         
      </article>
       <section class="price">
-     	 <h3>Стоимость:</h3>
-     		<!-- тут будет форма -->
-     	 от<!--     форма -->
-     	 до <!--     форма -->
+     	 <h3>Стоимость:</h3><!-- LABEL -->
+     	 <input type="range" min="0" max="15000">
+     	 от<!--   поле мин -->
+     	 до <!--     поле мах -->
      	 <h3>Сетка</h3>
      	  <ul class="filter1">
-     		<li>Адаптивная</li>
-     		<li>Фиксированная</li>
-     		<li>Резиновая</li>
+     		<li><input type="checkbox" name="check" value="adapt">Адаптивная</li>
+     		<li><input type="checkbox" name="check" value="fix">Фиксированная</li>
+     		<li><input type="checkbox" name="check" value="rubber">Резиновая</li>
      	  </ul>
      	  <h3>Особенности:</h3>
      		<ul class="filter2">
-     		<li>Слайдер</li>
-     		<li>Блок преимуществ</li>
-     		<li>Новости</li>
-     		<li>Галдерея</li>
-     		<li>Корзина</li>
+     		<li><input type="checkbox" name="check" value="slider">Слайдер</li>
+     		<li><input type="checkbox" name="check" value="block">Блок преимуществ</li>
+     		<li><input type="checkbox" name="check" value="news">Новости</li>
+     		<li><input type="checkbox" name="check" value="gallery">Галдерея</li>
+     		<li><input type="checkbox" name="check" value="basket">Корзина</li>
      	  </ul>
      	 <a class="button1" href="#">Показать</a>
      	</section>
+  </form>
  </main>
     <footer class="main-footer">
+     <form action="#" method="post">
     	<p class="footer-contacts">
     	  <b>Nёrds design studio</b>
     	  191186,Санкт-Петербург,
@@ -85,6 +88,22 @@
     	  тел +7(812)275-75-75
     	  <a class="button" href="#">Написать нам</a>
     	</p>
+    	<section class="visually-hidden">
+      <h3 class="visually-hidden">Всплывающее окно обратной связи</h3>
+      <h2>Напишите нам</h2>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="text" id="name">
+
+
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="text" id="email">
+
+
+        <label for="name">Текст письма:</label>
+        <textarea ></textarea>
+            <a class="button" href="#">Отравить</a>
+            <button><img src="img/closecross.svg" alt="Кнопка закрытия попапа"></button>
+    </section>
 		<div class="footer-social">
           <b>Давайте дружить,это выгодно!</b>
           Скидка 10% для друзей из социальных сетей.
@@ -94,6 +113,7 @@
           	  <li><a class="social-button" href="#">Инcтаграм</a></li>
        	 	</ul>
      	</div>
+      </form>
     </footer>  		 
 </body>
 </html>
