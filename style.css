@@ -1,0 +1,153 @@
+body {
+   margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400; /*как узнать*/
+    color: #283136;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+
+
+.container a {
+	list-style: none;
+	color: #ffffff;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.visually-hidden .button  {
+	background-color: #00ca74;
+}
+
+/*как сделать третью кнопку желтой*/
+
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #fb565a;
+}
+
+.info {
+    background-color: #eeeeee;
+	/*background-image: url("img/slider1.png") no-repeat;*/    /*Как вставить картинки для слайдов*/
+}
+
+.info b {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+ /*.button {
+  font-size: 16px;
+  line-height: 18px;
+  }*/
+
+.feature-item {
+    text-align: center;
+    list-style: none;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.about-us h3 {
+   font-size: 45px;
+   line-height: 45px;
+}
+
+.about-us h4 {
+	font-weight: bold;
+}
+
+/*.stats h3 {
+
+	font-weight: bold;  *не изменяется
+}
+*/
+
+/*146,100,50 как сделать больше*/
+
+
+.partners li {
+	opacity: 0.2;
+}
+
+.partners li:hover,
+.partners li:focus, {
+     opacity: 0.2;
+}                      /*не изменяются при наведении*/
+
+.footer-contacts {
+	 font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-contacts b {
+	font-size: 18px;
+    line-height: 30px;
+}
+
+/*Фон карты и маркера*/
+
+
+
+.social-button {
+    color: #000000;   /*Временно задал черный цвет,чтобы видеть их на белом фоне*/
+}
+
+.footer-social {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.footer-social b {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+
