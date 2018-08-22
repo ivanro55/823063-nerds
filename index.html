@@ -50,17 +50,17 @@
         <a class="button" href="#">Узнать больше</a>
         <ul class="slides-switches">
             <li class="slide-radio">
-                <button type="submit" name="slide1"><img src="img/slider-button.svg" alt="Первый слайд"></button>   
+                <button type="button" name="slide1"><img src="img/slider-button.svg" alt="Первый слайд"></button>   
             </li>
         </ul>
         <ul class="slides-switches">
             <li class="slide-radio">
-                <button type="submit" name="slide2"><img src="img/slider-button.svg" alt="Второй слайд"></button>
+                <button type="button" name="slide2"><img src="img/slider-button.svg" alt="Второй слайд"></button>
             </li>
         </ul>
         <ul class="slides-switches">
             <li class="slide-radio">
-                <button type="submit" name="slide3"><img src="img/slider-button.svg" alt="Третий слайд"></button>
+                <button type="button" name="slide3"><img src="img/slider-button.svg" alt="Третий слайд"></button>
             </li>
         </ul>  
     </section>  
@@ -81,10 +81,10 @@
           </li>
        </ul>
     </section> 
-    <a class="button" href="#">Заказать</a>
-    <a class="button" href="#">Заказать</a>
-    <a class="button" href="#">Заказать</a>
-     <article>
+    <a class="button" name="firstbutton" href="#">Заказать</a>
+    <a class="button" name="secondbutton" href="#">Заказать</a>
+    <a class="button" name="thirdbutton" href="#">Заказать</a>
+    <article class="about-us">
      <h3>Мы-маленькая,но гордая дизайн-студия из Краснодара.</h3>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,как роботы</p>
      	<h4>Выполняем заказы на разработку</h4>
@@ -106,7 +106,7 @@
     </section>
     <section class="icons">
         <h2 class="visually-hidden">Наши партнеры</h2>
-       <ul>
+       <ul class="partners">
         <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo1.png" width="199" height="68" alt="Логотип &laquo;HTML Academy&raquo;"></a></li>
         <li><img src="img/logo2.png" width="209" height="90" alt="Логотип &laquo;Barbershop&raquo;"></li>
         <li><img src="img/logo3.png" width="185" height="52" alt="Логотип &laquo;Pink&raquo;"></li>
@@ -116,15 +116,14 @@
 </main> 
     <footer class="main-footer">
      <h2 class="visually-hidden">Где мы находимся</h2>    
-     
       <p class="footer-contacts">
        <b>Nёrds design studio</b>
     	  191186,Санкт-Петербург,
     	  ул. б. конюшенная, д. 19/8
     	  тел +7(812)275-75-75 
-       <a class="button" href="#">Написать нам</a>
+       <a class="button" href="#">Напишите нам</a>
       </p>
-    <section class="visually-hidden">
+    <section class="feedback visually-hidden">
       <h3 class="visually-hidden">Всплывающее окно обратной связи</h3>
       <h2>Напишите нам</h2>
         <form action="#" method="post">
@@ -134,7 +133,7 @@
         <input type="email" name="text" id="email">
         <label for="name">Текст письма:</label>
         <textarea ></textarea>
-            <a class="button" href="#">Отравить</a>
+           <button type="submit">Отравить</button>
            <button><img src="img/closecross.svg" alt="Кнопка закрытия попапа"></button>
         </form>    
     </section>
@@ -142,7 +141,7 @@
           <b>Давайте дружить,это выгодно!</b>
           Скидка 10% для друзей из социальных сетей.
           <h2 class="visually-hidden">Наши социальные сети</h2> 
-          <ul>
+          <ul class="socialnetworks">
              <li><a class="social-button" href="#">Вконтакте</a></li>
              <li><a class="social-button" href="#">Фейсбук</a></li>
              <li><a class="social-button" href="#">Инcтаграм</a></li>
