@@ -1,3 +1,5 @@
+/*Общие стили + главная страница*/
+
 body {
    margin: 0;
     padding: 0;
@@ -12,23 +14,32 @@ body {
 
 a {
     text-decoration: none;
-
 }
 
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
     color: #000000;
-
     background-color: #eeeeee;
 }
 
 .site-navigation,
-.user-navigation {
-    list-style: none;
+.user-navigation,
+.socialnetworks,
+.slides-switches,
+.site-filters,
+.filter1,
+.filter2,
+.partners,
+.services-list {
+	list-style: none;
 }
 
-
+/*.main-header-logo:hover,
+.main-header-logo:focus{
+	background-image: : #3f3f3f;
+	Логотип при наведении
+}*/
 
 .container a {
 	list-style: none;
@@ -37,7 +48,7 @@ a {
 
 .button {
   font: inherit;
-
+  
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -47,15 +58,39 @@ a {
   border: none;
 }
 
-.visually-hidden .button  {
-	background-color: #00ca74;
-}
-
-/*как сделать третью кнопку желтой*/
-
 .button:hover,
 .button:focus {
 	background-color: #e74246;
+}
+
+.button:active {
+	background-color: #d7373b;
+}
+
+a[name="secondbutton"] {
+	background-color: #00ca74;
+}
+
+a[name="secondbutton"]:focus,
+a[name="secondbutton"]:hover {
+	background-color: #00bc6c;
+}
+
+a[name="secondbutton"]:active {
+	background-color: #00aa62;
+}
+
+a[name="thirdbutton"] {
+	background-color: #efc84a;
+}
+
+a[name="thirdbutton"]:focus,
+a[name="thirdbutton"]:hover {
+	background-color: #eab534;
+}
+
+a[name="thirdbutton"]:active {
+	background-color: #e5a722;
 }
 
 .site-navigation a,
@@ -79,11 +114,6 @@ a {
     font-size: 55px;
     line-height: 55px;
 }
-
- /*.button {
-  font-size: 16px;
-  line-height: 18px;
-  }*/
 
 .feature-item {
     text-align: center;
@@ -112,15 +142,17 @@ a {
 
 /*146,100,50 как сделать больше*/
 
-
 .partners li {
 	opacity: 0.2;
 }
 
-.partners li:hover,
-.partners li:focus, {
-     opacity: 0.2;
-}                      /*не изменяются при наведении*/
+.partners li:hover {
+     opacity: 1;
+}    
+
+.partners li:active {
+     opacity: 0.1;
+}    
 
 .footer-contacts {
 	 font-size: 16px;
@@ -134,10 +166,13 @@ a {
 
 /*Фон карты и маркера*/
 
-
+.main-footer {
+    background-image: url("img/map.png");
+}
 
 .social-button {
-    color: #000000;   /*Временно задал черный цвет,чтобы видеть их на белом фоне*/
+    color: #000000;   /*Временно задал черный цвет,чтобы видеть их на белом фоне
+    для кнопок соц. сетей*/
 }
 
 .footer-social {
@@ -150,4 +185,109 @@ a {
     line-height: 36px;
 }
 
+.feedback input,
+          textarea {
+	font:inherit;
+	background-color: transparent;
+	border: 2px solid #d7dcde;
+}
+          /*Прозрачность текста в покое 50%*/
+
+.feedback input:hover,
+          textarea:hover {
+	font:inherit;
+	background-color: transparent;
+	border: 2px solid #b4b9bb;
+}
+
+.feedback input:focus,
+          textarea:focus {
+	font:inherit;
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.feedback:invalid {
+	border-color: #e74347;
+}
+
+
+
+/*Отдельные стили для каталога*/
+
+
+.site-filters a,
+.templates a,
+.button1{
+	list-style: none;
+	color: #000000;
+}
+
+main h1 {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+/*.site-filters:nth-first-clild(1) ul{
+	font-size: 55px;
+	line-height: 55px;
+}*/
+
+a[name="button1"] {
+	font-size: 18px;
+	line-height: 30px
+}
+
+input[name="radio"] {
+	border-left: 
+}
+
+/*В каталоге формы обратной связи неправильно себя ведут при нажатии*/
+
+.site-filters a{
+	font-size: 14px;
+	line-height: 18px;
+	opacity: 0.3;
+}
+
+
+.site-filters a:focus{
+	opacity: 1;
+}
+
+.filter1,
+.filter2 {
+	font-size: 16px;
+	line-height: 20px;
+	opacity: 0.6;
+}
+
+.filter1:hover,     /*как сделать выделение каждой строки,а не всего блока*/
+.filter2:hover {
+    opacity: 1;
+}
+
+.filter1:inactive,
+.filter2:inactive {
+	opacity: 0.3;
+}
+
+div a{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+div p{
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+div button{
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+/*Надпись внизу "Скидка 10% для друзей из социальных сетей." не меняет цвет*/
 
