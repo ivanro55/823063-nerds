@@ -245,17 +245,6 @@ main h1 {
 	line-height: 55px;
 }
 
-
-
-a[name="button1"] {
-	font-size: 18px;
-	line-height: 30px
-}
-
-input[name="radio"] {
-	border-left: 
-}
-
 .site-filters a{
 	font-size: 14px;
 	line-height: 18px;
@@ -282,7 +271,6 @@ input[name="radio"] {
 	opacity: 0.6;
 }
 
-
 .price li:hover,
 .price li:focus {
 	color: #000000;
@@ -298,7 +286,13 @@ div a{
 	font-size: 18px;
 	line-height: 30px;
 }
-
+.buttonpage,
+.button1
+{
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+}
 div p{
 	font-size: 16px;
 	line-height: 18px;
