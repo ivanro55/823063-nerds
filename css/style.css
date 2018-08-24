@@ -4,10 +4,10 @@ body {
    margin: 0;
     padding: 0;
 
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 400; /*как узнать*/
+    font-weight: 500; 
     color: #283136;
     background: white;
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .main-header-logo:focus {
-	opacity: 0.3;     /* Логотип на главной странице*/
+	opacity: 0.3;    
 }
 
 .container a {
@@ -51,7 +51,6 @@ a {
 
 .button {
   font: inherit;
-  
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -70,29 +69,29 @@ a {
 	background-color: #d7373b;
 }
 
-a[name="secondbutton"] {
+.secondbutton {
 	background-color: #00ca74;
 }
 
-a[name="secondbutton"]:focus,
-a[name="secondbutton"]:hover {
+.secondbutton:focus,
+.secondbutton:hover {
 	background-color: #00bc6c;
 }
 
-a[name="secondbutton"]:active {
+.secondbutton:active {
 	background-color: #00aa62;
 }
 
-a[name="thirdbutton"] {
+.thirdbutton {
 	background-color: #efc84a;
 }
 
-a[name="thirdbutton"]:focus,
-a[name="thirdbutton"]:hover {
+.thirdbutton:focus,
+.thirdbutton:hover {
 	background-color: #eab534;
 }
 
-a[name="thirdbutton"]:active {
+.thirdbutton:active {
 	background-color: #e5a722;
 }
 
@@ -111,12 +110,28 @@ a[name="thirdbutton"]:active {
 
 .info {
     background-color: #eeeeee;
-	/*background-image: url("img/slider1.png") no-repeat;*/    /*Как вставить картинки для слайдов*/
+	   
+}
+
+.slide1 {
+	background-image: url("../img/slider1.png"); 
+}
+
+.slide2 {
+	background-image: url("../img/slider2.png"); 
+}
+
+.slide3 {
+	background-image: url("../img/slider3.png"); 
 }
 
 .info b {
     font-size: 55px;
     line-height: 55px;
+}
+
+.stats {
+	background-image: url("../img/nerds-illustration.png"); 
 }
 
 .feature-item {
@@ -138,13 +153,10 @@ a[name="thirdbutton"]:active {
 	font-weight: bold;
 }
 
-/*.stats h3 {
-
-	font-weight: : bold;  *не изменяется
-}*/
-
-
-/*146,100,50 как сделать больше*/
+.stats-part span {
+	font-size: 45px;
+   line-height: 10.06px;
+}
 
 .partners li {
 	opacity: 0.2;
@@ -168,10 +180,9 @@ a[name="thirdbutton"]:active {
     line-height: 30px;
 }
 
-/*Фон карты и маркера*/
-
 .main-footer {
-    background-image: url("img/map.png");
+    background-image: url("../img/map.png");
+    /*background-image: url("../img/map-marker.png") no-repeat ;   маркер на карте*/
 }
 
 .social-button {
@@ -195,13 +206,13 @@ a[name="thirdbutton"]:active {
 	background-color: transparent;
 	border: 2px solid #d7dcde;
 }
-          /*Прозрачность текста в покое 50%*/
 
 .feedback input:hover,
           textarea:hover {
 	font:inherit;
 	background-color: transparent;
 	border: 2px solid #b4b9bb;
+	color: rgba(44,44,44,.5);
 }
 
 .feedback input:focus,
@@ -215,14 +226,16 @@ a[name="thirdbutton"]:active {
 	border-color: #e74347;
 }
 
-
+.socialnetworks a:focus {
+    opacity: 0.3;
+}
 
 /*Отдельные стили для каталога*/
 
-
 .site-filters a,
 .templates a,
-.button1{
+.button1,
+.buttonpage {
 	list-style: none;
 	color: #000000;
 }
@@ -232,10 +245,7 @@ main h1 {
 	line-height: 55px;
 }
 
-/*.site-filters:nth-first-clild(1) ul{
-	font-size: 55px;
-	line-height: 55px;
-}*/
+
 
 a[name="button1"] {
 	font-size: 18px;
@@ -245,8 +255,6 @@ a[name="button1"] {
 input[name="radio"] {
 	border-left: 
 }
-
-/*В каталоге формы обратной связи неправильно себя ведут при нажатии*/
 
 .site-filters a{
 	font-size: 14px;
@@ -262,6 +270,11 @@ input[name="radio"] {
 	opacity: 1;
 }
 
+/*.site-filters li:nth-clild(1){
+	font-size: 55px;
+	line-height: 55px;    /*Надпись Соритровать не меняется
+}*/
+
 .filter1,
 .filter2 {
 	font-size: 16px;
@@ -269,13 +282,15 @@ input[name="radio"] {
 	opacity: 0.6;
 }
 
-.filter1:hover,     /*как сделать выделение каждой строки,а не всего блока*/
-.filter2:hover {
-    opacity: 1;
+
+.price li:hover,
+.price li:focus {
+	color: #000000;
+	opacity: 1;             /*Правильно или нет чекбоксы,радиобаттоны*/
 }
 
-.filter1:inactive,
-.filter2:inactive {
+.price li:inactive,
+.price li:inactive {
 	opacity: 0.3;
 }
 
@@ -296,5 +311,6 @@ div button{
 	color: #ffffff;
 }
 
-/*Надпись внизу "Скидка 10% для друзей из социальных сетей." не меняет цвет*/
-
+.footer-social span{
+    color: #444444;
+}
