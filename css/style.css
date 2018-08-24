@@ -118,7 +118,7 @@ a {
 }
 
 .slide2 {
-	background-image: url("../img/slider2.png"); 
+	background-image: url("../img/slider2.png");
 }
 
 .slide3 {
@@ -142,6 +142,18 @@ a {
 .feature-item h3 {
     font-size: 24px;
     line-height: 30px;
+}
+
+.itemfirst {
+	background-image: url("../img/image1.png");
+}
+
+.itemsecond {
+	background-image: url("../img/image2.png");
+}
+
+.itemthird {
+	background-image: url("../img/image3.png");
 }
 
 .about-us h3 {
@@ -307,4 +319,78 @@ div button{
 
 .footer-social span{
     color: #444444;
+}
+
+/* ----- Сеточные стили ----- */
+
+.main-navigation {
+	min-height: 132px;
+	display: flex;
+	flex-direction: row;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    width: 880px;
+    min-height: 132px;
+    padding: 0 10px;
+    margin-bottom: 29px;
+}
+
+.user-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 180px;
+	min-height: 132px;
+	padding: 0 10px;
+	margin-bottom: 29px;
+	justify-content: space-between;
+}
+
+}
+
+.slide1 {
+	min-height: 413px;
+	margin-bottom: 80;
+	
+}
+
+.slide2 {
+    /*visibility: hidden;*/
+    min-height: 413px;
+    
+}
+
+.slide3 {
+    /*visibility: hidden;*/
+    min-height: 413px;
+
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.features-list {
+	min-height: 347px;
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ;
+}
+
+.feature-item {
+	min-height: 347px;
+	width: 300px;
+}
+
+.services {
+	margin-bottom: 122;
 }
