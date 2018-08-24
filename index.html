@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" >
   <title>index</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
    <link href="css/normalize.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
 </head>
@@ -25,7 +25,7 @@
      </nav>
     </header>	
 <main class="container">
-    <section class="info">
+    <section class="info slide1">
       <h2 class="visually-hidden">Магазин Нёрдс</h2>
     	<b>Долго,дорого,<br>скрупулезно</b>
     	<p>
@@ -34,14 +34,14 @@
     	</p>
     	<a class="button" href="#">Узнать больше</a>
     </section>
-    <section class="info visually-hidden">
+    <section class="info slide2 visually-hidden">
         <b>Любим математику как никто другой</b>
         <p>
            Никакого креатива, только математические формулы для расчета идеальных пропорций.
         </p>
         <a class="button" href="#">Узнать больше</a>
     </section>
-    <section class="info visually-hidden">
+    <section class="info slide3 visually-hidden">
         <b>Только ночь, <br> только хардкор</b>
         <p>
            Работать днем, как все? Мы против этого.<br>
@@ -82,8 +82,8 @@
        </ul>
     </section> 
     <a class="button" name="firstbutton" href="#">Заказать</a>
-    <a class="button" name="secondbutton" href="#">Заказать</a>
-    <a class="button" name="thirdbutton" href="#">Заказать</a>
+    <a class="button secondbutton" name="secondbutton" href="#">Заказать</a>
+    <a class="button thirdbutton" name="thirdbutton" href="#">Заказать</a>
     <article class="about-us">
      <h3>Мы-маленькая,но гордая дизайн-студия из Краснодара.</h3>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,как роботы</p>
@@ -98,9 +98,9 @@
        <h3>С 2004 года любим точность во всем:</h3>
      	<table class="stats-part">
          <tr>
-     	  <td>146% уровень самоотдачи</td>
-		  <td>100% соблюдение сроков</td>
-     	  <td>50% минимальная предоплата</td>
+     	  <td><span>146%</span> уровень самоотдачи</td>
+		  <td><span>100%</span> соблюдение сроков</td>
+     	  <td><span>50%</span> минимальная предоплата</td>
          </tr>
      	</table>
     </section>
@@ -115,7 +115,7 @@
     </section>
 </main> 
     <footer class="main-footer">
-     <h2 class="visually-hidden">Где мы находимся</h2>    
+     <h2 class="visually-hidden">Где мы находимся</h2>
       <p class="footer-contacts">
        <b>Nёrds design studio</b>
     	  191186,Санкт-Петербург,
@@ -132,14 +132,14 @@
         <label for="email">Ваш e-mail:</label>
         <input type="email" name="text" id="email">
         <label for="name">Текст письма:</label>
-        <textarea ></textarea>
+        <textarea></textarea>
            <button type="submit">Отравить</button>
            <button><img src="img/closecross.svg" alt="Кнопка закрытия попапа"></button>
         </form>    
     </section>
         <div class="footer-social">
           <b>Давайте дружить,это выгодно!</b>
-          Скидка 10% для друзей из социальных сетей.
+          <span>Скидка 10% для друзей из социальных сетей.</span>
           <h2 class="visually-hidden">Наши социальные сети</h2> 
           <ul class="socialnetworks">
              <li><a class="social-button" href="#">Вконтакте</a></li>
