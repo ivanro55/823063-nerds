@@ -355,18 +355,21 @@ div button{
 .slide1 {
 	min-height: 413px;
 	margin-bottom: 80;
+	padding: 20px 55px;
 	
 }
 
 .slide2 {
     /*visibility: hidden;*/
     min-height: 413px;
+    padding: 20px 55px;
     
 }
 
 .slide3 {
     /*visibility: hidden;*/
     min-height: 413px;
+    padding: 20px 55px;
 
 }
 
@@ -375,15 +378,19 @@ div button{
 	flex-direction: column;
 }
 
+.services {
+	margin-bottom: 122;
+}
+
 .features-list {
 	min-height: 347px;
 	margin: 0;
-    padding: 0;
+    padding: 20px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    ;
+    
 }
 
 .feature-item {
@@ -391,6 +398,40 @@ div button{
 	width: 300px;
 }
 
-.services {
-	margin-bottom: 122;
+.index-columns {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.about-us {
+	width: 660px;
+}
+
+.stats {
+	width: 360px;
+}
+
+
+.icons-columns {
+	 width: 1160px;
+    
+   
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+   
+}
+
+.main-footer {
+	padding-top: 78px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
