@@ -10,10 +10,10 @@
 <body>
     <header class="main-header">
      <nav class="main-navigation">
+     <div class="container"> 
       <a class="main-header-logo" href="index.html">
      	<img src="img/nerdslogo.svg" width="160" height="65"  alt="Логотип магазина &laquo;Нёрдс&raquo;" >   
       </a>	  
-      <div class="container">  
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
         <li><a href="clients.html">Клиенты</a></li>
@@ -23,7 +23,7 @@
       <ul class="user-navigation">
         <li><a href="basket.html">Корзина</a></li>
       </ul>
-      </div>
+     </div>
      </nav>
     </header>
  <main class="container">
@@ -122,46 +122,50 @@
      </section> 
      </div>	
  </main> 
-    <footer class="main-footer"> 
-     <section class="feedback visually-hidden">
-      <h3 class="visually-hidden">Всплывающее окно обратной связи</h3>
-      <h2>Напишите нам</h2>
-        <form action="#" method="post">  
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="text" id="name">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="text" id="email">
-        <label for="name">Текст письма:</label>
-        <textarea ></textarea>
-            <button type="submit">Отравить</button>
-            <button><img src="img/closecross.svg" alt="Кнопка закрытия попапа"></button>
-        </form>   
-     </section>
-     <div class="container">
-      <div class="footer-address">
-      <h2 class="visually-hidden">Где мы находимся</h2> 
-    	<p class="footer-contacts">
-    	  <b>Nёrds design studio</b>
-    	  191186,Санкт-Петербург,
-    	  ул. б. конюшенная, д. 19/8
-    	  тел +7(812)275-75-75
-    	  <a class="button" href="#">Написать нам</a>
-    	</p>
-      </div>
-   
-		<div class="footer-social">
-		 <div class="footer-description">
+     <footer class="main-footer">
+     <div class="map-container">  <!-- Контейнер для карты -->
+        <div class="container"> 
+          <div class="footer-address"> 
+             <h2 class="visually-hidden">Где мы находимся</h2>
+             <p class="footer-contacts">
+             <b>Nёrds design studio</b>
+    	         191186,Санкт-Петербург,
+    	        ул. б. конюшенная, д. 19/8
+    	        тел +7(812)275-75-75 
+             <a class="button" href="#">Напишите нам</a>
+            </p> 
+           </div> 
+          </div>
+     </div>
+       <div class="container"> 
+        <div class="footer-social">
+         <div class="footer-description">
           <b>Давайте дружить,это выгодно!</b>
           <span>Скидка 10% для друзей из социальных сетей.</span>
          </div>
           <h2 class="visually-hidden">Наши социальные сети</h2> 
           <ul class="socialnetworks">
-          	 <li><a class="social-button" href="#">Вконтакте</a></li>
-          	 <li><a class="social-button" href="#">Фейсбук</a></li>
-          	 <li><a class="social-button" href="#">Инcтаграм</a></li>
-       	  </ul>
-     	</div>
+             <li><a class="social-button" href="#">Вконтакте</a></li>
+             <li><a class="social-button" href="#">Фейсбук</a></li>
+             <li><a class="social-button" href="#">Инcтаграм</a></li>
+          </ul>
+        </div>
      </div>
-    </footer>  		 
+    </footer> 
+    <!-- Форма обратной связи -->
+    <section class="feedback visually-hidden">
+      <h3 class="visually-hidden">Всплывающее окно обратной связи</h3>
+      <h2>Напишите нам</h2>
+        <form action="#" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="text" id="name">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="text" id="email">
+        <label for="name">Текст письма:</label>
+        <textarea></textarea>
+           <button type="submit">Отравить</button>
+           <button><img src="img/closecross.svg" alt="Кнопка закрытия попапа"></button>
+        </form>   
+      </section>         
 </body>
 </html>
