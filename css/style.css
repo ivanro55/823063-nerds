@@ -81,6 +81,68 @@ img {
   border: none;
 }
 
+.firstbutton {
+  display: block;
+  width: 160px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none; 
+}
+
+.secondbutton {
+	display: block;
+    width: 160px;
+    padding: 13px 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00ca74;
+    border-radius: 3px;
+    border: none; 
+}
+
+.thirdbutton {
+	display: block;
+    width: 160px;
+    padding: 13px 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background-color: #efc84a;
+    border-radius: 3px;
+    border: none; 
+}
+
+.main-footer .button {
+  display: block;
+  width: 219px;
+  padding: 13px 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none; 
+}
+
 .button:hover,
 .button:focus {
 	background-color: #e74246;
@@ -165,29 +227,38 @@ img {
 }
 
 .info b {
-	/*max-width: 600px;
-    margin: 0;
-    margin-bottom: 27px;*/
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-
+    background: rgba(101, 81, 214, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
 }
 
 .info p {
 	max-width: 430px;
     margin: 0;
     margin-bottom: 38px;
+    background: rgba(0, 200, 300, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
 }	
 
 .stats {
 	background-image: url("../img/nerds-illustration.png"); 
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+}
+
+.stats-part {
+	background: rgba(0, 200, 300, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
 }
 
 .feature-item {
-    text-align: center;
+    text-align: left;
     list-style: none;
+    min-height: 348px;
+    width: 300px;
 }
 
 .feature-item h3 {
@@ -195,35 +266,63 @@ img {
     line-height: 30px;
 }
 
+.feature-item p{
+	width: 240px;
+    height: 65px;
+}
+
+.itemfirst h3{
+	margin-top: 172px;
+    margin-bottom: 24px;
+}
+
+.itemfirst p{
+	margin-bottom: 35px;
+}
+
+.itemsecond h3{
+	margin-top: 172px;
+    margin-bottom: 24px;
+}
+
+.itemsecond p{
+	margin-bottom: 35px;
+}
+
+
+.itemthird h3{
+	margin-top: 172px;
+    margin-bottom: 24px;
+}
+
+.itemthird p{
+	margin-bottom: 35px;
+}
+
 .itemfirst {
 	background-image: url("../img/image1.png");
 	background-repeat: no-repeat;
 	width: 300px;
-	height: 146px;
+	display: flex;
+	flex-direction: column;
 }
 
 .itemsecond {
 	background-image: url("../img/image2.png");
 	background-repeat: no-repeat;
 	width: 300px;
-	height: 146px;
+    display: flex;
+	flex-direction: column;
 }
 
 .itemthird {
 	background-image: url("../img/image3.png");
 	background-repeat: no-repeat;
 	width: 300px;
-	height: 146px;
+	display: flex;
+	flex-direction: column;
 }
 
-.about-us h3 {
-   font-size: 45px;
-   line-height: 45px;
-}
-
-.about-us h4 {
-	font-weight: bold;
-}
 
 .stats-part span {
 	font-size: 45px;
@@ -510,6 +609,8 @@ div button{
 
 .services {
 	margin-bottom: 122;
+	background: rgba(251, 80, 90, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .features-list {
@@ -520,10 +621,6 @@ div button{
     margin-bottom: 80px; /*Мерил до декоративной линии*/
 }
 
-.feature-item {
-	min-height: 347px;
-	width: 300px;
-}
 
 .index-columns {
     padding: 20px 40px;
@@ -534,7 +631,35 @@ div button{
 }
 
 .about-us {
-	width: 660px;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	min-width: 660px;
+	background: rgba(300, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+    margin-right: 140px;
+}
+
+.about-us h3 {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+	padding-bottom: 35px;
+}
+
+.about-us p{
+	padding-bottom: 47px;
+}
+
+
+.about-us h4 {
+	font-weight: bold;
+	padding-bottom: 35px;
+	margin: 0;
+}
+
+.services-list li{
+    margin: 0;
 }
 
 .stats {
@@ -553,6 +678,7 @@ div button{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .container .footer-address {
 	margin-top: 54px; 
