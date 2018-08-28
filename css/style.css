@@ -16,15 +16,22 @@ a {
     text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+	margin-bottom: 30px;
+}
+
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
     color: #000000;
     background-color: #eeeeee;
-    /*min-height: 132px;*/
 	display: flex;
 	flex-direction: row;
-    width: 1440px;
 }
 
 .site-navigation,
@@ -113,6 +120,9 @@ a {
 
 .site-navigation a,
 .user-navigation a {
+   	display: block;
+    padding: 24px 7px;
+    vertical-align: middle;
     color: #000000;
 }
 
@@ -131,12 +141,9 @@ a {
 .info {
     background-color: #eeeeee;  
     height: 413px;
- 
+    margin-bottom: 80px;
 }
 
-.info:nth-child(1) {
-  display: block;
-}
 
 
 .slide1 {
@@ -245,12 +252,10 @@ a {
     line-height: 30px;
 }
 
-.main-footer {
+.map-container {
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
-    width: 1460px;
-    height: 416px;
-    /*background-image: url("../img/map-marker.png") no-repeat ;   маркер на карте*/
+    max-height: 416px;
 }
 
 .social-button {
@@ -291,7 +296,7 @@ a {
 	border: 2px solid #000000;
 }
 
-.feedback:invalid {
+.feedback input:invalid {
 	border-color: #e74347;
 }
 
@@ -300,6 +305,17 @@ a {
 }
 
 /*Отдельные стили для каталога*/
+
+.filters {
+	background: rgba(18, 255, 0, 0.2); /*Рамка для фильтров над шаблонами*/
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+    margin-bottom: 60px;
+}
+
+.templates-container {
+	background: rgba(18, 255, 0, 0.2); /*Рамка для шаблонов*/
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+}
 
 .site-filters a,
 .templates a,
@@ -312,6 +328,11 @@ a {
 main h1 {
 	font-size: 55px;
 	line-height: 55px;
+	text-align: center;
+	background-color: #eeeeee;
+	background-size: 1440px 246px;
+	height: 246px;
+	margin-bottom: 61px;
 }
 
 .filters p{
@@ -334,16 +355,17 @@ main h1 {
 	opacity: 1;
 }
 
-/*.site-filters li:nth-clild(1){
-	font-size: 55px;
-	line-height: 55px;    /*Надпись Соритровать не меняется
-}*/
-
 .filter1,
 .filter2 {
 	font-size: 16px;
 	line-height: 20px;
 	opacity: 0.6;
+}
+
+.price {
+	margin-right: 140px;
+	background: rgba(101, 81, 214, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .price li:hover,
@@ -403,29 +425,25 @@ div button{
 
 }
 
+.main-navigation .container {
+	display: flex;
+	justify-content: space-between;
+}
+
 .site-navigation {
-	margin: 0;
-	padding: 200;
-	/*min-height: 410;*/
-    list-style: none;
-    width: 880px;
-    /*min-height: 132px;*/
-    padding: 0 10px;
-    margin-bottom: 29px;
+    width: 560px;
     display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	 background: rgba(0, 200, 116, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .user-navigation {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    display: flex;
 	width: 180px;
-	/*min-height: 132px;*/
-	padding: 0 10px;
-	margin-bottom: 29px;
-	justify-content: space-between;
+	background: rgba(251, 80, 90, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .slider-controls {
@@ -495,14 +513,11 @@ div button{
 }
 
 .features-list {
-	/*min-height: 347px;*/
-/*	margin: 0;
-    padding: 20px;*/
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /*width: 1200px;*/
+    margin-bottom: 80px; /*Мерил до декоративной линии*/
 }
 
 .feature-item {
@@ -514,6 +529,8 @@ div button{
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    max-height: 530px;
+    margin-bottom: 48px;
 }
 
 .about-us {
@@ -522,7 +539,11 @@ div button{
 
 .stats {
 	width: 1200px;
-	/*min-height: 420px;*/
+	margin-bottom: 48px;
+}
+
+.icons {
+    margin-bottom: 80px;
 }
 
 .partners {
@@ -530,38 +551,32 @@ div button{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
     flex-wrap: wrap;
 }
 
-/*.main-footer {
-	padding-top: 84px;
-	
-	
-	flex-direction: column;
-	 justify-content: flex-start;
-}*/
+.container .footer-address {
+	margin-top: 54px; 
+	margin-bottom: 54px; 
+	 /* не сдвигается адрес внутри карты*/
+}
 
 .footer-address {
 	width: 319px;
 	height: 308px;
-	display: flex;
+	display: inline-block;
 	flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    background-color: #ffffff;
 }
-
-/*.footer-contacts {
-	
-}
-*/
 
 .footer-social {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
     flex-wrap: wrap;
-    height: 220px;
+    max-height: 220px;
+    padding-top: 69px;
 }
 
 .socialnetworks {
@@ -571,6 +586,9 @@ div button{
 	order: -1;
 	width: 360px;
 	flex-wrap: wrap;
+	background: rgba(251, 80, 90, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
 }
 
 .footer-description {
@@ -579,9 +597,17 @@ div button{
 	padding-left: 40px;
 	min-height: 64px;
 	flex-wrap: wrap;
+	background: rgba(251, 80, 90, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
+
+
+
 /*Каталог*/
+
+
+
 
 .sorting {
 	display: flex;
@@ -595,14 +621,17 @@ div button{
 	justify-content: space-between;
 	list-style: none;
 	width: 360px;
+/*	text-align: right;*/
 }
 
 .templates-container {
 	display: flex;
 	flex-direction: row;
 	width: 760px;
+/*	max-height: 1914px;*/
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-bottom: 60px;
 }
 
 .templates p {
@@ -617,15 +646,18 @@ div button{
 	flex-direction: row;
     justify-content: space-between;
     width: 460px;
+    height: 50px;
 }
 
 .main-container {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 60px;
 }
 
 .price {
 	width: 260px;
+	max-height: 702px;
 	order: -1;
 	padding-left: 20px;
 }
