@@ -22,12 +22,11 @@ img {
 }
 
 .main-header {
-	margin-bottom: 30px;
+	max-height: 132px;
+	background-color: #eeeeee;
 }
 
 .main-navigation {
-    font-size: 16px;
-    line-height: 30px;
     color: #000000;
     background-color: #eeeeee;
 	display: flex;
@@ -47,7 +46,7 @@ img {
 
 
 .main-header-logo {
-	padding-left: 20px;
+	margin-top: 49px;
 }
 
 .main-header-logo:hover{
@@ -67,8 +66,9 @@ img {
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
-  
+  max-height: 50px;
+  padding: 16px 0;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -182,62 +182,69 @@ img {
 
 .site-navigation a,
 .user-navigation a {
+	font-size: 16px;
+	line-height: 30px;
    	display: block;
-    padding: 24px 7px;
+    margin-top: 75px;
     vertical-align: middle;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .site-navigation a:hover,
+.user-navigation a:hover
+ {
+    color: #fb565a;
+}
+
 .site-navigation a:focus,
-.user-navigation a:hover,
 .user-navigation a:focus {
-    
-   color: #fb565a;
+    color: #000000;
+    opacity: 0.3;
+}
+
+.site-navigation a:active,
+.user-navigation a:active
+ {
+    color: #000000;
+     text-decoration: underline;
+     text-decoration-color: #fb565a;
+
 }
 
 .slider {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .info {
+	display: flex;
+	flex-direction: column;
     background-color: #eeeeee;  
-    height: 413px;
+    max-height: 413px;
     margin-bottom: 80px;
 }
 
-
-
-.slide1 {
-	background-image: url("../img/slider1.png"); 
-	background-repeat: no-repeat;
-    background-position: 93% 18px;
-}
-
-.slide2 {
-	background-image: url("../img/slider2.png");
-	background-repeat: no-repeat;
-    background-position: 100% 0;
-}
-
-.slide3 {
-	background-image: url("../img/slider3.png"); 
-	background-repeat: no-repeat;
-    background-position: 100% 20px;
-}
-
 .info b {
+	margin: 0;
+	padding: 0;
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    margin-top: 69px;
+    margin-bottom: 26px;
     background: rgba(101, 81, 214, 0.2);
     box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
 }
 
 .info p {
+	font-size: 16px;
+    line-height: 24px;
+    color: #283136;
+    font-weight: 400;
 	max-width: 430px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
     background: rgba(0, 200, 300, 0.2);
     box-shadow: inset 0 0 0 2px rgb(234, 255, 45)
 }	
@@ -264,37 +271,26 @@ img {
 .feature-item h3 {
     font-size: 24px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .feature-item p{
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
 	width: 240px;
-    height: 65px;
+    max-height: 65px;
 }
 
-.itemfirst h3{
-	margin-top: 172px;
-    margin-bottom: 24px;
-}
-
-.itemfirst p{
-	margin-bottom: 35px;
-}
-
-.itemsecond h3{
-	margin-top: 172px;
-    margin-bottom: 24px;
-}
-
-.itemsecond p{
-	margin-bottom: 35px;
-}
-
-
+.itemfirst h3,
+.itemsecond h3,
 .itemthird h3{
 	margin-top: 172px;
     margin-bottom: 24px;
 }
 
+.itemfirst p,
+.itemsecond p,
 .itemthird p{
 	margin-bottom: 35px;
 }
@@ -326,7 +322,7 @@ img {
 
 .stats-part span {
 	font-size: 45px;
-   line-height: 10.06px;
+    line-height: 10.06px;
 }
 
 .partners li {
@@ -378,6 +374,7 @@ img {
 	font:inherit;
 	background-color: transparent;
 	border: 2px solid #d7dcde;
+	color: rgba(68,68,68,.5);
 }
 
 .feedback input:hover,
@@ -385,7 +382,7 @@ img {
 	font:inherit;
 	background-color: transparent;
 	border: 2px solid #b4b9bb;
-	color: rgba(44,44,44,.5);
+	color: rgba(68,68,68,.5);
 }
 
 .feedback input:focus,
@@ -393,10 +390,12 @@ img {
 	font:inherit;
 	background-color: transparent;
 	border: 2px solid #000000;
+	color: rgba(68,68,68,1);
 }
 
 .feedback input:invalid {
 	border-color: #e74347;
+	color: #e74347;
 }
 
 .socialnetworks a:focus {
@@ -428,7 +427,7 @@ main h1 {
 	font-size: 55px;
 	line-height: 55px;
 	text-align: center;
-	background-color: #eeeeee;
+
 	background-size: 1440px 246px;
 	height: 246px;
 	margin-bottom: 61px;
@@ -530,19 +529,25 @@ div button{
 }
 
 .site-navigation {
-    width: 560px;
-    display: flex;
-	 background: rgba(0, 200, 116, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+	margin: 0;
+	padding: 0;
+    width: 440px;
+        display: flex;
+	background: rgba(0, 200, 116, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .user-navigation {
+	margin: 0;
+	padding: 0;
     display: flex;
-	width: 180px;
+	max-width: 180px;
+	flex-wrap: wrap;
 	background: rgba(251, 80, 90, 0.2);
     box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+    padding-left: 86px;
 }
 
 .slider-controls {
@@ -562,9 +567,11 @@ div button{
 .slider-controls i {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
     width: 18px;
     height: 18px;
     padding: 8px;
+
     border-radius: 50%;
     cursor: pointer;
 }
@@ -586,41 +593,52 @@ div button{
   
 }
 
+
+
+
 .slide1 {
-	min-height: 413px;
-	margin-bottom: 80;
-	padding: 20px 55px;
-	
+	background-image: url("../img/slider1.png"); 
+	background-repeat: no-repeat;
+    background-position: 93% 18px;
+    height: 413px;
 }
 
 .slide2 {
-    /*visibility: hidden;*/
-    min-height: 413px;
-    padding: 20px 55px;
-    
+	background-image: url("../img/slider2.png");
+	background-repeat: no-repeat;
+    background-position: 100% 0;
+    height: 413px;
 }
 
 .slide3 {
-    /*visibility: hidden;*/
-    min-height: 413px;
-    padding: 20px 55px;
+	background-image: url("../img/slider3.png"); 
+	background-repeat: no-repeat;
+    background-position: 100% 20px;
+    height: 413px;
+}
 
+.slide2 b{
+	margin-top: 81px;
+    max-width: 515px;
 }
 
 .services {
+	max-width: px;
 	margin-bottom: 122;
-	background: rgba(251, 80, 90, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .features-list {
+	margin: 0;
+	padding: 0;
+	max-width: 1100px;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 80px; /*Мерил до декоративной линии*/
+    background: rgba(251, 80, 90, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
-
 
 .index-columns {
     padding: 20px 40px;
@@ -690,6 +708,7 @@ div button{
 	width: 319px;
 	height: 308px;
 	display: inline-block;
+	vertical-align: top;
 	flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
