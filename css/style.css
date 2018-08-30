@@ -75,7 +75,6 @@ img {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
@@ -85,14 +84,12 @@ img {
   display: block;
   width: 160px;
   padding: 13px 0;
-  
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  
   background-color: #fb565a;
   border-radius: 3px;
   border: none; 
@@ -278,7 +275,7 @@ img {
 	margin: 0;
 	padding: 0;
 	font-weight: 400;
-	width: 240px;
+	width: 300px;
     max-height: 65px;
 }
 
@@ -550,6 +547,22 @@ div button{
     padding-left: 86px;
 }
 
+.user-navigation .cart{
+	position: relative;
+}
+
+.cart::before {
+    content: "";
+    width: 16px;
+    height: 18px;
+    position: absolute;
+    bottom: 5px;
+    right: 98px;
+    background-image: url("../img/cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .slider-controls {
   position: absolute;
   left: 50%;
@@ -593,9 +606,6 @@ div button{
   
 }
 
-
-
-
 .slide1 {
 	background-image: url("../img/slider1.png"); 
 	background-repeat: no-repeat;
@@ -623,7 +633,6 @@ div button{
 }
 
 .services {
-	max-width: px;
 	margin-bottom: 122;
 }
 
@@ -641,7 +650,8 @@ div button{
 }
 
 .index-columns {
-    padding: 20px 40px;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     max-height: 530px;
@@ -656,6 +666,7 @@ div button{
 	background: rgba(300, 0, 0, 0.2);
     box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
     margin-right: 140px;
+    margin-top: 82px;
 }
 
 .about-us h3 {
@@ -666,23 +677,40 @@ div button{
 }
 
 .about-us p{
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
 	padding-bottom: 47px;
 }
 
-
 .about-us h4 {
+	font-size: 16px;
+	line-height: 24px;
 	font-weight: bold;
+	text-transform: uppercase;
 	padding-bottom: 35px;
 	margin: 0;
+	max-height: 425px;
+}
+
+.services-list {
+    margin: 0;
+    max-height: 160px;
 }
 
 .services-list li{
     margin: 0;
+    margin-bottom: 34px;
 }
 
 .stats {
+	display: flex;
+	flex-direction: column;
 	width: 1200px;
+	max-height: 408px;
 	margin-bottom: 48px;
+	margin-top: 43px;
+	padding-top: 249px;
 }
 
 .icons {
