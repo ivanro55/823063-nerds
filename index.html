@@ -169,33 +169,27 @@
      </div>
     </footer> 
     <!-- Форма обратной связи -->
-    <section class="feedback visually-hidden">
+    <section class="modal modal-feedback visually-hidden">
       <h3 class="visually-hidden">Всплывающее окно обратной связи</h3>
       <h2>Напишите нам</h2>
-        <form action="#" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" name="text" id="name">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" name="text" id="email">
-        <label for="name">Текст письма:</label>
-        <textarea></textarea>
-           <button type="submit">Отравить</button>
-           <button><img src="img/closecross.svg" alt="Кнопка закрытия попапа"></button>
+        <form class="feedback-form" action="#" method="post">
+        <div class="twoforms">
+        <p class="nameform">
+          <label  for="name">Ваше имя:</label>
+          <input class="login-icon-user" type="text" name="text" id="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="emailform">
+          <label for="email">Ваш e-mail:</label>
+          <input class="email-icon-user" type="email" name="text" id="email" placeholder="email@example.com">
+        </p>
+        </div>
+        <p class="textareaform">
+        <label for="textarea">Текст письма:</label>
+        <textarea id="textarea" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
+           <button class="button" type="submit">Отравить</button>
+           <button class="modal-close" type="button">Закрыть</button>
         </form>   
       </section>         
 </body>
 </html>
-
-
-
-
-<!-- <section class="stats">
-       <h3>С 2004 года любим точность во всем:</h3>
-        <table class="stats-part">
-         <tr height="120">
-          <td><span class="percentages">146<sup class="percentages-style">%</sup></span><span class="td-style">Уровень самоотдачи</span></td>
-          <td><span  class="percentages">100<sup class="percentages-style">%</sup></span><span class="td-style">Соблюдение сроков</span></td>
-          <td><span  class="percentages">50<sup class="percentages-style">%</sup></span><span class="td-style">Минимальная предоплата</span></td>
-         </tr>            
-        </table>
-    </section>   -->

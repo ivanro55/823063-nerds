@@ -139,7 +139,7 @@
      </section> 
  </main> 
      <footer class="main-footer">
-     <div class="map-container">  <!-- Контейнер для карты -->
+     <div class="map-container">  <!-- Контейнер для карты --><div class="map-marker">
          <div class="container"> 
           <div class="footer-address"> 
              <h2 class="visually-hidden">Где мы находимся</h2>
@@ -152,6 +152,7 @@
             </p> 
            </div> 
           </div>
+        </div>
      </div>
        <div class="container"> 
         <div class="footer-social">
@@ -184,24 +185,26 @@
              </li>
           </ul>
         </div>
-     </div>
+     </div> 
     </footer> 
     <!-- Форма обратной связи -->
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback visually-hidden">
       <h3 class="visually-hidden">Всплывающее окно обратной связи</h3>
       <h2>Напишите нам</h2>
         <form class="feedback-form" action="#" method="post">
-        <p>
+        <div class="twoforms">
+        <p class="nameform">
           <label  for="name">Ваше имя:</label>
           <input class="login-icon-user" type="text" name="text" id="name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="emailform">
           <label for="email">Ваш e-mail:</label>
           <input class="email-icon-user" type="email" name="text" id="email" placeholder="email@example.com">
         </p>
-        <p>
-        <label for="name">Текст письма:</label>
-        <textarea placeholder="В свободной форме"></textarea>
+        </div>
+        <p class="textareaform">
+        <label for="textarea">Текст письма:</label>
+        <textarea id="textarea" rows="10" placeholder="В свободной форме"></textarea>
         </p>
            <button class="button" type="submit">Отравить</button>
            <button class="modal-close" type="button">Закрыть</button>
